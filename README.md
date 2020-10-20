@@ -6,6 +6,6 @@ or deleted rows)
 • display the history of executed statements (within single session)   
 • implement algorithm to reverse the order of words in a sentence  
   
-![alt text](https://github.com/DimaKriv/sql_executor.0.1/edit/master/task.jpg)
+![alt text](https://raw.githubusercontent.com/DimaKriv/sql_executor.0.1/master/task.jpg)
   
 Pressing ">" arrow on the right side of each row should execute the query and visualize results. 
