@@ -1,5 +1,5 @@
 You have to implement a Rich Internet application, using the following technologies:  
- - Dojo JavaScript framework v1.12 (http://dojotoolkit.org/) on the client side  
+ - Dojo JavaScript framework v1.12 (http://dojotoolkit.org/) on the client side (Changed to React.js and Materialize)
  - JAX-RS based RESTful services on the server side  
 Server code must run on Tomcat or Oracle or WebSphere application server. Servlet container is
 sufficient for implementation of the task.  
