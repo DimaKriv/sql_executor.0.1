@@ -14,13 +14,13 @@ or deleted rows)
 The GUI of the application must look as follows. DGrid is used to show executed SQL
 statements.  
 
-![alt text]()
+![alt text](https://raw.githubusercontent.com/DimaKriv/sql_executor.0.1/master/task_jpg1.jpg)
 
 "..." on the image above identifies not specified in this example part of the SQL statement. In the
 implementation the entire specified by the user SQL statement should be displayed.  
 "Add new" should show a modal (i.e with overlay in background) dialog like:  
 
-![alt text]()
+![alt text](https://raw.githubusercontent.com/DimaKriv/sql_executor.0.1/master/task_jpg2.jpg)
 
 Pressing ">" arrow on the right side of each row should execute the query and visualize results.
 Results must be visualized using DGrid component, similar to main view of the application. The
@@ -28,7 +28,7 @@ difference is that for visualization columns must be dynamically created dependi
 output.  
 Error handling (overlay to disable GUI of the application is mandatory):  
 
-![alt text]()
+![alt text](https://raw.githubusercontent.com/DimaKriv/sql_executor.0.1/master/task_jpg3.jpg)
 
 Please additionally implement an algorithm to reverse the order of words in a sentence. Use your
 RESTful service to execute it on server side. Do not allocate additional string buffers for resulting
