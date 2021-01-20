@@ -1,0 +1,53 @@
+{
+  "_from": "dijit",
+  "_id": "dijit@1.16.3",
+  "_inBundle": false,
+  "_integrity": "sha512-D1dvhLYU2qXQ92rK49z0pQvskQphKyA9j9b5CyljwrNWDSbikIFzKobF9W+srEAMHRD10mHSJEHu5F/Fkyfg3w==",
+  "_location": "/dijit",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "dijit",
+    "name": "dijit",
+    "escapedName": "dijit",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/dijit/-/dijit-1.16.3.tgz",
+  "_shasum": "7888e144edab454eca7f08bb7b7aaa66f5b5e098",
+  "_spec": "dijit",
+  "_where": "C:\\Users\\Dmitri\\WebstormProjects\\dojoprototype\\alpha-prototype",
+  "bugs": {
+    "url": "http://bugs.dojotoolkit.org/"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "dojo": "1.16.3"
+  },
+  "deprecated": false,
+  "description": "Dijit provides a complete collection of user interface controls based on Dojo, giving you the power to create web applications that are highly optimized for usability, performance, internationalization, accessibility, but above all deliver an incredible user experience.",
+  "directories": {
+    "lib": "."
+  },
+  "dojoBuild": "dijit.profile.js",
+  "homepage": "http://dojotoolkit.org/",
+  "keywords": [
+    "JavaScript",
+    "Dojo",
+    "Widget"
+  ],
+  "license": "BSD-3-Clause OR AFL-2.1",
+  "main": "main",
+  "name": "dijit",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dojo/dijit.git"
+  },
+  "version": "1.16.3"
+}

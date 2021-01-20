@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     height="10" width="10" viewBox="0 0 100 100">
+    <line x1="50" y1="0" x2="50" y2="100" style="stroke: blue; stroke-width:33" />
+    <line x1="0" y1="50" x2="100" y2="50" style="stroke: blue; stroke-width:33"/>
+</svg>
