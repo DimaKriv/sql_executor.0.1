@@ -1,0 +1,18 @@
+.root {
+}
+
+.grid {
+    display: grid;
+    column-gap: 8px;
+    row-gap: 4px;
+    grid-template-columns: auto auto;
+}
+
+.main {
+    border-bottom: 4px solid #06657B;
+    border-right: 4px solid #06657B;
+    border-left: 4px solid #06657B;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 4px;
+}

@@ -1,0 +1,9 @@
+.root {
+    background-color: #06657B;
+    border-radius: 5px;
+}
+
+.label {
+    color: white;
+    font-family:  Lato, sans-serif;
+}

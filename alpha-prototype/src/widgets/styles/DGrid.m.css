@@ -1,0 +1,63 @@
+.rootCell {
+    border: none;
+    border-bottom: solid #DDDDDD 1px ;
+}
+.rootTh {
+    background-color: #79adbb;
+    text-align: left;
+}
+.rootThSmall {
+    width: 24px
+}
+
+.tabRoot {
+
+}
+
+.tabTab {
+    border: none;
+    border-bottom: solid 1px #005aff;
+    margin-bottom: 1px;
+}
+
+.tabActive {
+    border: none;
+    border-bottom: solid 3px #005aff;
+    margin-bottom: 0;
+}
+
+.buttonRoot {
+    font-weight: normal;
+    min-width: 20px;
+    min-height: 10px;
+    border: none;
+    padding: 4px 10px 5px;
+    border-bottom: solid 1px #005aff;
+    margin-bottom: 5px;
+}
+
+.buttonPressed {
+    padding-bottom: 4px;
+    border-bottom: solid 3px #005aff;
+    margin-bottom: 4px;
+}
+
+.buttonLabel {
+    font-family:  Lato, sans-serif;
+    font-size: 9px;
+    color: black;
+    display: flex;
+    line-height: normal;
+}
+
+.buttonLabelText {
+}
+
+.buttonLabelImg {
+    display: flex;
+    padding-right: 6px;
+}
+
+.buttonGroup {
+    display: flex;
+}

@@ -1,0 +1,82 @@
+.root {
+    width: 550px;
+    position: relative;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+.content {
+    padding: 10px 15px 15px;
+}
+
+.background {
+    position:fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #6a7782;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.buttonRoot {
+    border-radius: 2px;
+    background-color: #5c6c7c;
+    margin-left: 10px;
+    min-width: 0;
+}
+
+.buttonLabel {
+    color: white;
+    display: flex;
+}
+
+.buttonGroup {
+    display: flex;
+    margin-top: 20px;
+    justify-content: flex-end;
+}
+
+.contentImg {
+    float: left;
+    width: 60px;
+    height: 50px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.contentText{
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+}
+
+.iconHeader {
+    color: #6a7782;
+}
+
+.iconHeaderOnMove {
+    border-radius: 2px;
+    border: 1px solid #6a7782;
+}
+
+.wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.closedWrapper {
+    display: none;
+}
+
+.iconHeaderOnLeave {
+    margin: 1px;
+}

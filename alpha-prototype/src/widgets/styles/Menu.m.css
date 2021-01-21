@@ -1,0 +1,28 @@
+.root {
+	flex: 1;
+	overflow: hidden;
+	height: auto;
+	padding: 16px 0 16px 0;
+	background-color: #06657B;
+}
+
+.link:hover {
+	color: #ccddee;
+}
+.title {
+	text-align: center;
+}
+
+.link {
+	min-width: 140px;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 18px;
+	color: white;
+	box-sizing: border-box;
+}
+
+.selected {
+	color: lightskyblue;
+}

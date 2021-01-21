@@ -1,0 +1,12 @@
+.root {
+    color: #6a7782
+}
+
+.onenter {
+    border: 1px solid #6a7782;
+    border-radius: 5px;
+}
+
+.onleave {
+    margin: 1px;
+}
