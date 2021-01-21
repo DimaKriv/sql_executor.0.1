@@ -107,12 +107,4 @@ public class QueryExecution extends LoggerSupported {
             throw new SQLException(e);
         }
     }
-
-    public static void main(String[] args) throws SQLException {
-        /*QueryExecution e = new QueryExecution();
-        //e.sandboxConnection.createStatement("SELECT * FROM EX");
-        Map linkedList =  e.execute("SELECT * FROM EX");
-        System.out.println(linkedList);*/
-        // History.of().getAllHistory().forEach(System.out::println);
-    }
 }

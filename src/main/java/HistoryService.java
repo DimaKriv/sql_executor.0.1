@@ -2,15 +2,11 @@ import org.apache.cxf.rs.security.cors.CrossOriginResourceSharing;
 import org.json.simple.JSONObject;
 
 import javax.ws.rs.*;
-import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
-import javax.ws.rs.core.StreamingOutput;
 import java.io.*;
 import java.sql.SQLException;
-import java.util.List;
 import java.util.Map;
-import java.util.Objects;
 
 @Path("/")
 @Produces("application/json")
@@ -72,7 +68,6 @@ public class HistoryService {
     @Consumes("text/plain")
     public String executeSQl(String sql)  {
         try {
-            System.out.println(sql);
             Map invalidData = new QueryExecution().execute(sql);
             Map validData = fixJsonLibraryDateProblem(invalidData);
             return JSONObject.toJSONString(validData);
@@ -87,17 +82,15 @@ public class HistoryService {
                 exeJson.get(QueryMeta.DATE.name).toString());
         return exeJson;
     }
-    @Path("static/{path:.*}")
+    @Path("/static/{path:.*}")
     @GET
     @Produces({"text/html", "text/css"})
     public Response index(@PathParam("path") String param) {
         try {
             InputStream inputStream = new FileInputStream(
                     "build/resources/main/dist/" + param);
-            System.out.println("static" + inputStream);
             return Response.ok().entity(inputStream).build();
         } catch (FileNotFoundException e) {
-            System.out.println(e.getLocalizedMessage());
             return Response.status(Response.Status.NO_CONTENT).build();
         }
     }
