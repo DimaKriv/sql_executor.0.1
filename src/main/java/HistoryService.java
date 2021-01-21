@@ -5,6 +5,8 @@ import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.io.*;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.sql.SQLException;
 import java.util.Map;
 
@@ -84,14 +86,24 @@ public class HistoryService {
     }
     @Path("/static/{path:.*}")
     @GET
-    @Produces({"text/html", "text/css"})
+    @Produces({"text/html", "text/css", "image/svg+xml", "image/png"})
     public Response index(@PathParam("path") String param) {
         try {
             InputStream inputStream = new FileInputStream(
                     "build/resources/main/dist/" + param);
+            if (param.endsWith(".png")) {
+                return Response.ok().type("image/png").entity(inputStream).build();
+            }
             return Response.ok().entity(inputStream).build();
         } catch (FileNotFoundException e) {
             return Response.status(Response.Status.NO_CONTENT).build();
         }
+    }
+
+    @Path("/")
+    @GET
+    @Produces("text/html")
+    public Response redirectToIndex() throws URISyntaxException {
+        return Response.seeOther(new URI("/static/")).build();
     }
 }
